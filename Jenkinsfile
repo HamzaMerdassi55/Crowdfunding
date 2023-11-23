@@ -4,7 +4,7 @@ node {
     def dockerImageTag = "devopsexample${env.BUILD_NUMBER}"
    
     stage('Clone Repo') {
-      git 'https://github.com/HamzaMerdassi55/Crowdfunding.git';
+      git 'https://github.com/wahidh007/Jenkins-Test.git';
     }    
  
     stage('Build Project') {
