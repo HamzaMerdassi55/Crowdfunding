@@ -7,14 +7,14 @@ node {
       git 'https://github.com/HamzaMerdassi55/back.git';
     }    
  
-    stage('Build Project') {
-      sh "'${mvnHome}/bin/mvn' -B -DskipTests clean package"
-    }
+    // stage('Build Project') {
+    //   sh "'${mvnHome}/bin/mvn' -B -DskipTests clean package"
+    // }
    
-    stage('Initialize Docker'){        
-      def dockerHome = tool 'MyDocker'        
-      env.PATH = "${dockerHome}/bin:${env.PATH}"    
-    }
+    // stage('Initialize Docker'){        
+    //   def dockerHome = tool 'MyDocker'        
+    //   env.PATH = "${dockerHome}/bin:${env.PATH}"    
+    // }
    
     // stage('Build Docker Image') {
     //   sh "docker -H tcp://192.168.127.130:2375 build -t devopslabs:${env.BUILD_NUMBER} ."
