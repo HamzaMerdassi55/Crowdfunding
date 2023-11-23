@@ -7,9 +7,9 @@ node {
       git 'https://github.com/HamzaMerdassi55/back.git';
     }    
  
-    // stage('Build Project') {
-    //   sh "'${mvnHome}/bin/mvn' -B -DskipTests clean package"
-    // }
+    stage('Build Project') {
+      sh "'${mvnHome}/bin/mvn' -B -DskipTests clean package"
+    }
    
     // stage('Initialize Docker'){        
     //   def dockerHome = tool 'MyDocker'        
